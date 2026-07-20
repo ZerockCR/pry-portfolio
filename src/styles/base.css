@@ -1,0 +1,103 @@
+:root {
+  /* Colors — light theme (default) */
+  --color-bg: #F5F3EE;
+  --color-surface: #FFFFFF;
+  --color-text: #111111;
+  --color-text-muted: #6B6B6B;
+  --color-border: rgba(17, 17, 17, 0.08);
+  --color-accent: #1A1AE6;
+  --color-signal: #16A34A;
+
+  /* Grain overlay strength, tuned per theme */
+  --grain-opacity: 0.025;
+
+  /* Typography */
+  --font-display: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+  --font-ui: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', monospace;
+
+  /* Spacing scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --space-10: 128px;
+
+  /* Layout */
+  --max-width: 1200px;
+  --padding-x: 48px;
+
+  /* Transitions */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-base: 200ms;
+  --duration-enter: 600ms;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --padding-x: 24px;
+  }
+}
+
+/* Dark theme — terminal-inspired, cooler-than-black surface */
+:root[data-theme='dark'] {
+  --color-bg: #0B0D10;
+  --color-surface: #14171C;
+  --color-text: #EDEDE7;
+  --color-text-muted: #8A8F98;
+  --color-border: rgba(237, 237, 231, 0.1);
+  --color-accent: #8B85FF;
+  --color-signal: #B4FF39;
+  --grain-opacity: 0.05;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-ui);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Offsets in-page anchor jumps (navbar links) by the fixed header's height (80px),
+     so the target section doesn't land hidden underneath it. */
+  scroll-padding-top: 80px;
+}
+
+body {
+  background-color: var(--color-bg);
+  min-height: 100vh;
+  overflow-x: hidden;
+  transition: background-color var(--duration-enter) var(--ease-out-expo);
+}
+
+body, body * {
+  transition: background-color var(--duration-base) ease, border-color var(--duration-base) ease;
+}
+
+img, video {
+  max-width: 100%;
+  display: block;
+  -webkit-user-drag: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font: inherit;
+}

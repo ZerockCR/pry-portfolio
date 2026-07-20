@@ -1,0 +1,220 @@
+{
+  "meta": {
+    "siteTitle": "Andrés L — Full Stack Engineer",
+    "siteDescription": "Andrés Lobo — Backend Software Engineer. A portfolio with case studies of production systems: filing automation for free trade zones and a full-stack tourism platform in Costa Rica."
+  },
+  "nav": {
+    "ariaLabel": "Main",
+    "about": "About",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contact": "Contact",
+    "themeToggleAria": "Switch to light or dark mode",
+    "langToggleAria": "Switch language to Spanish",
+    "menuToggleAria": "Open navigation menu"
+  },
+  "hero": {
+    "whoami": "whoami",
+    "role": "Software Engineer · Backend",
+    "headlineLine1": "Backend first.",
+    "headlineLine2": "Systems that hold up in production.",
+    "sublineLine1": "A filing system that today serves more than 1000 companies.",
+    "sublineLine2": "A complete platform built solo, from the database to the deploy.",
+    "meta": {
+      "technologies": "Technologies",
+      "location": "Location",
+      "status": "Status",
+      "statusValue": "Employed — open to opportunities"
+    },
+    "ctaProjects": "View projects",
+    "ctaContact": "Get in touch →",
+    "scroll": "Scroll"
+  },
+  "about": {
+    "label": "About me",
+    "stat1Label": "years of experience",
+    "stat2Label": "active companies",
+    "stat3Label": "stacks in production",
+    "body1": "I've spent more than three years building software that solves real problems — from automating government filings used by thousands of companies, to standing up complete platforms solo, from the data model to the deploy. Along the way I led teams, but not because I wanted to step away from code: I did it because the work called for it, and because understanding how a team moves made me a better engineer.",
+    "body2": "My roots are in backend — C#/.NET, Python/Flask, SQL — where I feel most comfortable making architecture decisions and thinking about scale. I work the frontend with Vue and TypeScript: enough to not depend on anyone else when the product needs it.",
+    "closing": "Engineer first. Leadership came after — the projects speak for the rest."
+  },
+  "experience": {
+    "label": "Experience",
+    "gpg_lead": {
+      "role": "Team Lead",
+      "period": "Apr 2024 — Present",
+      "bullets": [
+        "In code: performance optimizations, integrations with external APIs (including digital signatures), complex business rules and architecture improvements on production systems.",
+        "In the team: coordination with external teams on the same system, prioritization and delivery across ~13 projects.",
+        "Result: the filing system now serves more than 1000 free-trade-zone companies, with ~100 filings processed per day and none of the previous system's downtime."
+      ]
+    },
+    "gpg_backend": {
+      "role": "Back End Developer",
+      "period": "Apr 2023 — Apr 2024",
+      "bullets": [
+        "Built the base backend architecture for the Online Filings system (C#/.NET, SQL Server, BPMN platform) — the same one that runs the production system today.",
+        "Designed and implemented REST and SOAP web services for integration with external systems.",
+        "Fixed inherited failures in notifications and document generation, two of the processes that interrupted daily work the most.",
+        "Result: the foundation left this year is the one the system that now processes filings for more than 1000 companies was built on."
+      ]
+    }
+  },
+  "skills": {
+    "label": "Skills",
+    "groups": {
+      "backend": { "label": "Backend", "sublabel": "Core — +3 years" },
+      "frontend": { "label": "Frontend", "sublabel": "Growing" },
+      "tools": { "label": "Tools", "sublabel": "Working stack" }
+    }
+  },
+  "education": {
+    "label": "Education",
+    "fidelitas": {
+      "degree": "Licentiate Degree in Systems Engineering",
+      "period": "Jan 2023 — Present"
+    },
+    "uaca": {
+      "degree": "Bachelor's Degree in Systems Engineering",
+      "period": "Apr 2019 — Dec 2022"
+    }
+  },
+  "certifications": {
+    "label": "Certifications",
+    "scrum": { "date": "Jul 2025" },
+    "auraquantic": { "date": "Apr 2023" },
+    "ccna": { "date": "May 2019" },
+    "itessentials": { "date": "Jan 2019" }
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Shall we work together?"
+  },
+  "footer": {
+    "backToTop": "Back to top ↑"
+  },
+  "projectsSection": {
+    "label": "Projects",
+    "title": "Selected work",
+    "tagsAriaLabel": "Tags",
+    "stackAriaLabel": "Technologies",
+    "viewCase": "View full case →"
+  },
+  "projectView": {
+    "backLink": "← Back to home",
+    "eyebrow": "Case study",
+    "process": "Process",
+    "comingSoon": "Full case — coming soon"
+  },
+  "diagrams": {
+    "pipeline": {
+      "caption": "Lifecycle of a filing",
+      "desc": "A filing moves through request, validations, joint signatures, code-based notification and persisted resolution.",
+      "solicitud": { "title": "Request", "subtitle": "depends on the filing type" },
+      "validaciones": { "title": "Validations", "subtitle": "mandatory rules per filing" },
+      "firmas": { "title": "Joint signatures", "subtitle": "several signers converge" },
+      "notificacion": { "title": "Code-based notification", "subtitle": "status visible to each party" },
+      "resuelto": { "title": "Filing resolved", "subtitle": "persisted in the process" }
+    },
+    "firma": {
+      "caption": "Joint signature flow",
+      "desc": "A document is sent to several internal and external signers; all signatures converge on a validation and the signed document is persisted.",
+      "documento": { "title": "Document" },
+      "firmante1": { "title": "Signer 1", "subtitle": "internal" },
+      "firmante2": { "title": "Signer 2", "subtitle": "internal" },
+      "firmante3": { "title": "Signer 3", "subtitle": "external" },
+      "validacion": { "title": "Validation", "subtitle": "all signatures present" },
+      "documentoFirmado": { "title": "Signed document", "subtitle": "persisted in the filing" }
+    }
+  },
+  "projects": {
+    "zonas_francas": {
+      "tagline": "Filing automation for the free-trade-zone regime",
+      "year": "2023 — Present",
+      "tags": ["Government", "Automation", "Enterprise"],
+      "description": "System to automate permit and filing management for the free-trade-zone regime, processing daily operations for more than 1000 active companies with integration to external systems via SOAP and REST.",
+      "caseTitle": "Filing automation system for free trade zones",
+      "caseTagline": "A filing management platform for a public entity, on a BPMN architecture with a custom-built C#/.NET backend. Development and technical team leadership.",
+      "heroStats": {
+        "companies": "Active companies",
+        "dailyFilings": "Filings / day",
+        "filingTypes": "Filing types"
+      },
+      "resultCard": {
+        "statusLabel": "In production since 2023",
+        "headline": "1000+ companies · ~100 filings/day",
+        "note": "System belonging to a public entity. Code and screenshots under confidentiality."
+      },
+      "case": {
+        "problem": {
+          "heading": "The problem",
+          "p1": "The entity already had its own system to manage free-trade-zone filings — ten distinct request types — but it was poorly optimized: slow, with frequent, unpredictable failures that interrupted work. The officials who depended on it daily were frustrated by the constant outages. This wasn't about building a nonexistent process from scratch, but replacing a production system that people already hated, without losing any of the rules each filing type is required to enforce."
+        },
+        "decision": {
+          "heading": "The technical decision",
+          "p1": "It was built on a BPMN platform to model the filing flow, but with a custom backend behind it in C#/.NET and SQL Server, communicating over SOAP and REST. The interesting part was the boundary between the two worlds: the BPMN platform handles process orchestration, but a good part of the hard logic didn't exist and had to be coded from scratch and integrated via SOAP. Deciding what the BPMN solved and what demanded custom code was a constant architecture decision."
+        },
+        "challenges": {
+          "heading": "The technical challenges",
+          "firma": {
+            "heading": "Joint signatures",
+            "p1": "In public filings the same document has to be signed by several officials, both internal and external, so I built the logic for simple and joint signatures from scratch — creating the signature, validating that it was associated with the filing, retrieving the signed document and persisting it in the process — all integrated with the BPMN platform via SOAP, which wasn't designed for that kind of consumption."
+          },
+          "integration": {
+            "heading": "Cross-team integration",
+            "p1": "We weren't the only company modifying the system. Several external teams were making changes to the same codebase in parallel, and it all had to converge into a single platform without breaking. Keeping that technical coordination going — aligning interfaces, avoiding conflicts, making everyone's pieces fit — was as demanding as the code itself."
+          },
+          "closingP1": "On top of that came the business rules — each of the ten filing types with its own set of mandatory validations — and a code-based notification system so every party always knew the status of their filing."
+        },
+        "role": {
+          "heading": "My role",
+          "p1": "I led the team, but my work was mostly technical. I built and tested the business rules, implemented the connections to external APIs — including the signature one — did the performance optimizations and load testing, and redesigned role handling to make it cleaner and free of the errors it carried. I coordinated integration with the external teams and set the team's priorities to hit the committed dates."
+        },
+        "result": {
+          "heading": "The result",
+          "p1": "The system now serves more than 1000 free-trade-zone companies, averaging 100 filings processed per day and with practically none of the outages that made the previous system unusable. Officials' satisfaction improved noticeably once the constant interruptions disappeared."
+        }
+      }
+    },
+    "horizontes": {
+      "tagline": "A platform to discover nature and adventure spots in Costa Rica. Solo full-stack design and development.",
+      "year": "2024",
+      "tags": ["Personal Project", "Full Stack", "API Integration"],
+      "description": "A complete platform built solo for nature and adventure exploration in Costa Rica, with real-time integration of external weather and tide APIs.",
+      "heroCard": {
+        "statusLabel": "Site in production"
+      },
+      "case": {
+        "problem": {
+          "heading": "The problem",
+          "p1": "Planning a camping or adventure trip in Costa Rica means fighting scattered information. Gear shops aren't listed anywhere common where you can compare prices or confirm they have what you need; the good destinations get discovered by word of mouth; and for a foreign tourist the risk of ending up with an unreliable agency is real. I lived it, friends and acquaintances lived it, and I confirmed it by traveling. There was no single, reliable place that brought all of that together."
+        },
+        "decision": {
+          "heading": "The technical decision",
+          "p1": "I approached it as a decoupled client-server architecture: a static frontend consuming an independent JSON REST API, with JWT authentication. I decoupled it on purpose — instead of a server-rendered monolithic app — for two reasons: keeping the frontend light and fast to serve, and letting the same API feed other clients tomorrow (a mobile app, for example) without rewriting the business logic. For the backend I deliberately chose Python with Flask and SQLAlchemy over MySQL 8, a stack that was new to me, using the project as a way to master it end to end."
+        },
+        "built": {
+          "heading": "What I built and what was hard",
+          "p1": "The platform brings together in one place a destination catalog (with description, amenities, price, address and reviews), a social gallery from the community, tip blogs, a probable-wildlife guide by expedition, and live data on weather, tides and conservation status.",
+          "figure1Caption": "Destination detail",
+          "figure1Alt": "Destination detail view on Horizontes Salvajes CR",
+          "p2": "The hardest part was integrating external data sources I didn't control: the weather API and, above all, the tide API, which come in distinct, region-specific formats that had to be normalized so the frontend could consume them uniformly. Building and debugging that backend while learning Python forced me to really understand the data model and the API flow, not just copy recipes.",
+          "figure2Caption": "Live weather",
+          "figure2Alt": "Live weather view on Horizontes Salvajes CR",
+          "figure3Caption": "Tides — 7 days, normalized from an external source",
+          "figure3Alt": "Normalized 7-day tide table on Horizontes Salvajes CR"
+        },
+        "result": {
+          "heading": "The result",
+          "p1": "The platform has been in production since July 2026: 3 documented destinations, a wildlife guide with 382 entries, and live weather, tide and conservation-status data normalized from three external sources with different formats. The catalog keeps growing; the decoupled architecture means adding content doesn't touch the backend."
+        },
+        "lesson": {
+          "heading": "The decision I learned the most from",
+          "navLabel": "Results & Decision",
+          "p1": "I had a section of knot-tying videos planned — camping, fishing, general-purpose — and I cut it. Producing that content at good quality took a disproportionate amount of time relative to the value it added at launch, so I dropped it from the initial scope and left it documented for a future phase. Knowing what <em>not</em> to build turned out to be as important as knowing what to build."
+        }
+      }
+    }
+  }
+}

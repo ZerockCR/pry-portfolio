@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+
+    <title>Andrés L — Ingeniero Full Stack</title>
+    <meta
+      name="description"
+      content="Andrés Lobo — Ingeniero de Software backend. Portafolio con casos de estudio de sistemas en producción: automatización de trámites para zonas francas y una plataforma full stack de turismo en Costa Rica."
+    />
+    <link rel="canonical" href="https://zerockcrportafolio.com/" />
+
+    <!-- Open Graph — usado por WhatsApp, LinkedIn, Slack, Facebook, etc. al compartir el link -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Andrés Lobo" />
+    <meta property="og:locale" content="es_CR" />
+    <meta property="og:url" content="https://zerockcrportafolio.com/" />
+    <meta property="og:title" content="Andrés L — Ingeniero Full Stack" />
+    <meta
+      property="og:description"
+      content="Andrés Lobo — Ingeniero de Software backend. Portafolio con casos de estudio de sistemas en producción: automatización de trámites para zonas francas y una plataforma full stack de turismo en Costa Rica."
+    />
+    <!-- Sin og:image por ahora — agregar cuando haya una imagen dedicada de 1200×630. -->
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Andrés L — Ingeniero Full Stack" />
+    <meta
+      name="twitter:description"
+      content="Andrés Lobo — Ingeniero de Software backend. Portafolio con casos de estudio de sistemas en producción: automatización de trámites para zonas francas y una plataforma full stack de turismo en Costa Rica."
+    />
+
+    <link rel="icon" href="/assets/programming.png" type="image/png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+      (function () {
+        var stored = localStorage.getItem('theme');
+        var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.dataset.theme = theme;
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

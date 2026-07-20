@@ -1,0 +1,220 @@
+{
+  "meta": {
+    "siteTitle": "Andrés L — Ingeniero Full Stack",
+    "siteDescription": "Andrés Lobo — Ingeniero de Software backend. Portafolio con casos de estudio de sistemas en producción: automatización de trámites para zonas francas y una plataforma full stack de turismo en Costa Rica."
+  },
+  "nav": {
+    "ariaLabel": "Principal",
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "experience": "Experiencia",
+    "contact": "Contacto",
+    "themeToggleAria": "Cambiar a modo claro u oscuro",
+    "langToggleAria": "Cambiar idioma a inglés",
+    "menuToggleAria": "Abrir menú de navegación"
+  },
+  "hero": {
+    "whoami": "whoami",
+    "role": "Ingeniero de Software · Backend",
+    "headlineLine1": "Backend primero.",
+    "headlineLine2": "Sistemas que aguantan producción.",
+    "sublineLine1": "Un sistema de trámites que hoy sirve a más de 1000 empresas.",
+    "sublineLine2": "Una plataforma completa construida en solitario, de la base de datos al deploy.",
+    "meta": {
+      "technologies": "Tecnologías",
+      "location": "Ubicación",
+      "status": "Estado",
+      "statusValue": "Empleado — abierto a oportunidades"
+    },
+    "ctaProjects": "Ver proyectos",
+    "ctaContact": "Ponte en contacto →",
+    "scroll": "Desplázate"
+  },
+  "about": {
+    "label": "Sobre mí",
+    "stat1Label": "años de experiencia",
+    "stat2Label": "empresas activas",
+    "stat3Label": "stacks en producción",
+    "body1": "Llevo más de tres años construyendo software que resuelve problemas reales — desde automatizar trámites gubernamentales que manejaban miles de empresas, hasta levantar plataformas completas en solitario desde el modelo de datos hasta el deploy. En el camino lideré equipos, pero no porque quisiera alejarme del código: lo hice porque el trabajo lo pedía, y porque entender cómo se mueve un equipo me hizo mejor ingeniero.",
+    "body2": "Mi raíz está en backend — C#/.NET, Python/Flask, SQL — donde me siento más cómodo tomando decisiones de arquitectura y pensando en escala. El frontend lo trabajo con Vue y TypeScript: lo suficiente para no depender de nadie cuando el producto lo necesita.",
+    "closing": "Ingeniero primero. El liderazgo vino después — los proyectos dicen el resto."
+  },
+  "experience": {
+    "label": "Experiencia",
+    "gpg_lead": {
+      "role": "Líder de Equipo",
+      "period": "Abr 2024 — Presente",
+      "bullets": [
+        "En código: optimizaciones de rendimiento, integraciones con APIs externas (incluida firma digital), reglas de negocio complejas y mejoras de arquitectura sobre sistemas en producción.",
+        "En equipo: coordinación con equipos externos sobre el mismo sistema, priorización y entregas en ~13 proyectos.",
+        "Resultado: el sistema de trámites hoy da servicio a más de 1000 empresas de zona franca, con ~100 trámites procesados por día y sin las caídas del sistema anterior."
+      ]
+    },
+    "gpg_backend": {
+      "role": "Desarrollador Back End",
+      "period": "Abr 2023 — Abr 2024",
+      "bullets": [
+        "Construí la arquitectura base del backend del sistema de Trámites en Línea (C#/.NET, SQL Server, plataforma BPMN) — la misma que hoy sostiene el sistema en producción.",
+        "Diseñé e implementé servicios web REST y SOAP para integración con sistemas externos.",
+        "Resolví los fallos heredados en notificaciones y generación de documentos, dos de los procesos que más interrumpían el trabajo diario.",
+        "Resultado: la base que dejó este año es sobre la que se construyó el sistema que hoy procesa los trámites de más de 1000 empresas."
+      ]
+    }
+  },
+  "skills": {
+    "label": "Habilidades",
+    "groups": {
+      "backend": { "label": "Backend", "sublabel": "Núcleo — +3 años" },
+      "frontend": { "label": "Frontend", "sublabel": "En crecimiento" },
+      "tools": { "label": "Herramientas", "sublabel": "Stack de trabajo" }
+    }
+  },
+  "education": {
+    "label": "Educación",
+    "fidelitas": {
+      "degree": "Licenciatura en Ingeniería en Sistemas",
+      "period": "Ene 2023 — Presente"
+    },
+    "uaca": {
+      "degree": "Bachillerato en Ingeniería en Sistemas",
+      "period": "Abr 2019 — Dic 2022"
+    }
+  },
+  "certifications": {
+    "label": "Certificaciones",
+    "scrum": { "date": "Jul 2025" },
+    "auraquantic": { "date": "Abr 2023" },
+    "ccna": { "date": "May 2019" },
+    "itessentials": { "date": "Ene 2019" }
+  },
+  "contact": {
+    "label": "Contacto",
+    "title": "¿Trabajamos juntos?"
+  },
+  "footer": {
+    "backToTop": "Volver arriba ↑"
+  },
+  "projectsSection": {
+    "label": "Proyectos",
+    "title": "Trabajo seleccionado",
+    "tagsAriaLabel": "Etiquetas",
+    "stackAriaLabel": "Tecnologías",
+    "viewCase": "Ver caso completo →"
+  },
+  "projectView": {
+    "backLink": "← Volver al inicio",
+    "eyebrow": "Caso de estudio",
+    "process": "Proceso",
+    "comingSoon": "Caso completo — próximamente"
+  },
+  "diagrams": {
+    "pipeline": {
+      "caption": "Ciclo de vida de un trámite",
+      "desc": "Un trámite recorre solicitud, validaciones, firmas mancomunadas, notificación por código y resolución persistida.",
+      "solicitud": { "title": "Solicitud", "subtitle": "según el tipo de trámite" },
+      "validaciones": { "title": "Validaciones", "subtitle": "reglas obligatorias por trámite" },
+      "firmas": { "title": "Firmas mancomunadas", "subtitle": "varios firmantes convergen" },
+      "notificacion": { "title": "Notificación por código", "subtitle": "estado visible a cada involucrado" },
+      "resuelto": { "title": "Trámite resuelto", "subtitle": "persistido en el proceso" }
+    },
+    "firma": {
+      "caption": "Flujo de firma mancomunada",
+      "desc": "Un documento se envía a varios firmantes internos y externos; todas las firmas convergen en una validación y el documento firmado se persiste.",
+      "documento": { "title": "Documento" },
+      "firmante1": { "title": "Firmante 1", "subtitle": "interno" },
+      "firmante2": { "title": "Firmante 2", "subtitle": "interno" },
+      "firmante3": { "title": "Firmante 3", "subtitle": "externo" },
+      "validacion": { "title": "Validación", "subtitle": "todas las firmas presentes" },
+      "documentoFirmado": { "title": "Documento firmado", "subtitle": "persistido en el trámite" }
+    }
+  },
+  "projects": {
+    "zonas_francas": {
+      "tagline": "Automatización de trámites para el régimen de zonas francas",
+      "year": "2023 — Presente",
+      "tags": ["Gobierno", "Automatización", "Empresarial"],
+      "description": "Sistema para automatizar la gestión de permisos y trámites del régimen de zonas francas, procesando operaciones diarias de más de 1000 empresas activas con integración a sistemas externos mediante SOAP y REST.",
+      "caseTitle": "Sistema de automatización de trámites para zonas francas",
+      "caseTagline": "Plataforma de gestión de trámites para una entidad pública, sobre arquitectura BPMN con backend a la medida en C#/.NET. Desarrollo y liderazgo técnico en equipo.",
+      "heroStats": {
+        "companies": "Empresas activas",
+        "dailyFilings": "Trámites / día",
+        "filingTypes": "Tipos de trámite"
+      },
+      "resultCard": {
+        "statusLabel": "En producción desde 2023",
+        "headline": "1000+ empresas · ~100 trámites/día",
+        "note": "Sistema de una entidad pública. Código y capturas bajo confidencialidad."
+      },
+      "case": {
+        "problem": {
+          "heading": "El problema",
+          "p1": "La entidad ya tenía un sistema propio para gestionar los trámites de zonas francas —diez tipos de solicitud distintos—, pero estaba mal optimizado: lento, con fallos frecuentes e impredecibles que interrumpían el trabajo. Los funcionarios que dependían de él a diario estaban molestos por las caídas constantes. No era construir desde cero un proceso inexistente, sino reemplazar un sistema en producción que la gente ya odiaba, sin perder ninguna de las reglas que cada trámite obliga a cumplir."
+        },
+        "decision": {
+          "heading": "La decisión técnica",
+          "p1": "Se construyó sobre una plataforma BPMN para modelar el flujo de los trámites, pero con un backend propio en C#/.NET y SQL Server detrás, comunicado mediante SOAP y REST. La parte interesante fue la frontera entre ambos mundos: la plataforma BPMN da la orquestación del proceso, pero buena parte de la lógica difícil no existía y hubo que programarla desde cero e integrarla vía SOAP. Decidir qué resolvía el BPMN y qué exigía código a medida fue una decisión de arquitectura constante."
+        },
+        "challenges": {
+          "heading": "Los retos técnicos",
+          "firma": {
+            "heading": "Firmas mancomunadas",
+            "p1": "En los trámites públicos un mismo documento debe ir firmado por varios funcionarios, internos y externos, así que construí desde cero la lógica de firmas simples y mancomunadas —crear la firma, validar que quedara asociada al trámite, recuperar el documento firmado y persistirlo en el proceso—, todo integrado a la plataforma BPMN vía SOAP, que no estaba pensada para ese tipo de consumo."
+          },
+          "integration": {
+            "heading": "Integración entre equipos",
+            "p1": "No éramos la única empresa modificando el sistema. Varios equipos externos hacían cambios sobre el mismo código en paralelo, y todo tenía que converger en una sola plataforma sin romperse. Mantener esa coordinación técnica —alinear interfaces, evitar conflictos, lograr que las piezas de cada quien encajaran— fue tan exigente como el código mismo."
+          },
+          "closingP1": "A eso se sumaron las reglas de negocio —cada uno de los diez trámites con su propio conjunto de validaciones obligatorias— y un sistema de notificaciones por código para que cada involucrado supiera en todo momento el estado de su trámite."
+        },
+        "role": {
+          "heading": "Mi rol",
+          "p1": "Lideré el equipo, pero mi trabajo fue mayoritariamente técnico. Construí y probé las reglas de negocio, implementé las conexiones a APIs externas —incluida la de firmas—, hice las optimizaciones de rendimiento y las pruebas de carga, y rediseñé el manejo de roles para que quedara más limpio y sin los errores que arrastraba. Coordiné la integración con los equipos externos y ordené las prioridades del equipo para cumplir las fechas comprometidas."
+        },
+        "result": {
+          "heading": "El resultado",
+          "p1": "El sistema hoy da servicio a más de 1000 empresas de zona franca, con un promedio de 100 trámites procesados por día y prácticamente sin las caídas que hacían inservible al sistema anterior. La satisfacción de los funcionarios mejoró de forma notable al desaparecer las interrupciones constantes."
+        }
+      }
+    },
+    "horizontes": {
+      "tagline": "Plataforma para descubrir lugares de naturaleza y aventura en Costa Rica. Diseño y desarrollo full stack en solitario.",
+      "year": "2024",
+      "tags": ["Proyecto Personal", "Full Stack", "Integración de APIs"],
+      "description": "Plataforma completa construida en solitario para exploración de naturaleza y aventura en Costa Rica, con integración de APIs externas de clima y mareas en tiempo real.",
+      "heroCard": {
+        "statusLabel": "Sitio en producción"
+      },
+      "case": {
+        "problem": {
+          "heading": "El problema",
+          "p1": "Planear una salida de camping o aventura en Costa Rica significa pelear con información dispersa. Las tiendas de equipo no están en ningún lugar común donde comparar precios o confirmar si tienen lo que necesitás; los buenos destinos se descubren de boca en boca; y para un turista extranjero el riesgo de caer con una agencia poco fiable es real. Lo viví yo, lo vivían amigos y conocidos, y lo confirmé viajando. No existía un punto único y confiable que juntara todo eso."
+        },
+        "decision": {
+          "heading": "La decisión técnica",
+          "p1": "Lo planteé como una arquitectura cliente-servidor desacoplada: un frontend estático que consume una REST API JSON independiente, con autenticación vía JWT. Desacoplé a propósito —en lugar de una app monolítica renderizada en el servidor— por dos razones: que el frontend fuera liviano y rápido de servir, y que la misma API pudiera alimentar mañana otros clientes (una app móvil, por ejemplo) sin reescribir la lógica de negocio. Para el backend elegí deliberadamente Python con Flask y SQLAlchemy sobre MySQL 8, un stack nuevo para mí, usando el proyecto como vía para dominarlo de extremo a extremo."
+        },
+        "built": {
+          "heading": "Lo que construí y lo difícil",
+          "p1": "La plataforma reúne en un solo lugar un catálogo de destinos (con descripción, amenidades, precio, dirección y reseñas), una galería social de la comunidad, blogs de consejos, una guía de fauna probable según la expedición, y datos en vivo de clima, mareas y estado de conservación.",
+          "figure1Caption": "Detalle de un destino",
+          "figure1Alt": "Detalle de un destino en Horizontes Salvajes CR",
+          "p2": "Lo más difícil fue integrar fuentes de datos externas que no controlaba: las APIs de clima y, sobre todo, de mareas, que vienen en formatos distintos y específicos por región, y había que normalizarlas para que el frontend las consumiera de forma uniforme. Construir y depurar ese backend mientras aprendía Python me obligó a entender de verdad el modelo de datos y el flujo de la API, no solo a copiar recetas.",
+          "figure2Caption": "Clima en vivo",
+          "figure2Alt": "Clima en vivo en Horizontes Salvajes CR",
+          "figure3Caption": "Mareas — 7 días, normalizadas desde fuente externa",
+          "figure3Alt": "Tabla de mareas de 7 días normalizada en Horizontes Salvajes CR"
+        },
+        "result": {
+          "heading": "El resultado",
+          "p1": "La plataforma está en producción desde julio de 2026: 3 destinos documentados, una guía de fauna con 382 registros, y datos en vivo de clima, mareas y estado de conservación normalizados desde tres fuentes externas con formatos distintos. El catálogo crece; la arquitectura desacoplada significa que agregar contenido no toca el backend."
+        },
+        "lesson": {
+          "heading": "La decisión de la que más aprendí",
+          "navLabel": "Resultados & Decisión",
+          "p1": "Tenía planeada una sección de videos de nudos —camping, pesca, generales— y la corté. Producir ese contenido con buena calidad consumía un tiempo desproporcionado frente al valor que aportaba al lanzamiento, así que la saqué del alcance inicial y la dejé documentada para una fase futura. Saber qué <em>no</em> construir resultó tan importante como saber qué construir."
+        }
+      }
+    }
+  }
+}
