@@ -51,9 +51,9 @@ onUnmounted(() => {
 <template>
   <header class="app-header" :class="{ 'is-scrolled': scrolled }">
     <nav class="container app-header__nav" :aria-label="t('nav.ariaLabel')">
-      <a href="#" class="app-header__logo">
+      <RouterLink to="/" class="app-header__logo">
         <span class="app-header__prompt" aria-hidden="true">~/</span>andres-lobo
-      </a>
+      </RouterLink>
 
       <ul class="app-header__links app-header__links--desktop">
         <li v-for="link in navLinks" :key="link.href">
