@@ -1,12 +1,15 @@
 <script setup lang="ts">
 import { computed, onMounted, onUnmounted, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { useRoute, useRouter } from 'vue-router'
 import { useTheme } from '../../composables/useTheme'
 import { useLocale } from '../../composables/useLocale'
 
 const { theme, toggleTheme } = useTheme()
 const { locale, toggleLocale } = useLocale()
 const { t } = useI18n()
+const route = useRoute()
+const router = useRouter()
 
 const scrolled = ref(false)
 const menuOpen = ref(false)
@@ -28,6 +31,14 @@ function closeMenu() {
   menuOpen.value = false
 }
 
+function handleNavClick(event: MouseEvent, href: string) {
+  closeMenu()
+  if (route.path !== '/') {
+    event.preventDefault()
+    router.push({ path: '/', hash: href })
+  }
+}
+
 onMounted(() => {
   window.addEventListener('scroll', handleScroll, { passive: true })
 })
@@ -46,7 +57,7 @@ onUnmounted(() => {
 
       <ul class="app-header__links app-header__links--desktop">
         <li v-for="link in navLinks" :key="link.href">
-          <a :href="link.href" class="app-header__link">{{ link.label }}</a>
+          <a :href="link.href" class="app-header__link" @click="handleNavClick($event, link.href)">{{ link.label }}</a>
         </li>
       </ul>
 
@@ -95,7 +106,7 @@ onUnmounted(() => {
 
     <ul v-if="menuOpen" class="app-header__links app-header__links--mobile">
       <li v-for="link in navLinks" :key="link.href">
-        <a :href="link.href" class="app-header__link" @click="closeMenu">{{ link.label }}</a>
+        <a :href="link.href" class="app-header__link" @click="handleNavClick($event, link.href)">{{ link.label }}</a>
       </li>
     </ul>
   </header>
