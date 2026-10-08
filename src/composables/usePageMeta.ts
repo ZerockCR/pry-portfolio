@@ -7,7 +7,7 @@ interface PageMeta {
   path: string
 }
 
-const SITE_URL = 'https://zerockcrportafolio.com'
+const SITE_URL = 'https://andreslobo.dev/'
 
 function setMetaTag(attr: 'name' | 'property', key: string, content: string) {
   let el = document.head.querySelector<HTMLMetaElement>(`meta[${attr}="${key}"]`)
